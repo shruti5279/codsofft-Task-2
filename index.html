@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shruti Yadav - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+         
+ 
+    
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Shruti's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">ContactMe</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section class="first" id="home">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Shruti</span>
+                <div>and I am a</div>
+                <span id="element"></span>
+                
+            </div><button type="download " id="btn"><a href="https://drive.google.com/file/d/1o-zHno-HYcz3kJMV9KWXLDqGlm6O7WwE/view?usp=sharing">Download My CV</a></button>
+           
+            <div class="rightSection">
+                <img src="bg.png.png" alt="">
+            </div>
+            
+        </section>
+        <hr>
+        <section class="secondSection" id="skill">
+           
+            <h1>Skills</h1>
+            <span class="textgrey">                                                     What Skills I have Gained</span>
+            <div class="flex-container">
+                <div class="flex-box"><img src="HTML.png" height="250px" width="250px">
+                </div>
+                <div class="flex-box"><img src="CSS.png" height="250px" width="250px">
+                </div>
+                <div class="flex-box"><img src="sql.png" height="230px" width="230px">
+                </div>
+                <div class="flex-box"><img src="c++.png" height="250px" width="250px">
+                </div>
+            </div>
+            <p>Developing skills is important because it allows you to improve attributes and qualities vital to effective workplace performance. By developing these skills, you can also begin your path to personal development, which can help you maximise your potential and achieve your career goals in record time</p>
+        </section>
+        <hr>
+        <section class="thirdSection" id="projects">
+            <h1>Projects</h1>
+            <span class="textgrey">Currently working on these projects ..</span>
+            <div class="slider" >
+                <div class="images">
+                <input type="radio" name="slide" id="img1" checked>
+                <input type="radio" name="slide" id="img2"  checked>
+                <input type="radio" name="slide" id="img3"  checked>
+
+                <img src="LP.png" class="m1" alt="img1">
+                <img src="PORT.png" class="m2" alt="img2">
+                <img src="CAL.png" class="m3" alt="img3">
+            </div>
+        
+            <div class="dots">
+                <label1 for="img1"></label1>
+                <label2 for="img2"></label2>
+                <label3 for="img3"></label3>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="fourth" id="contact">
+        <h1>CONTACT ME</h1>
+        <div class="hero">
+            <form>
+            <div class="input-group">
+                <input type="text" id="name" required>
+                <label for="name">Your name</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="number" required>
+                <label for="number">Phone no.</label>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" required>
+                <label for="email">Email id</label>
+            </div>
+            <div class="input-group">
+                <textarea id="message" rows="8"></textarea>
+                <label for="message">Message</label>
+            </div>
+            <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+    </section>
+
+    <hr>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Video Editor', 'Web Designer...'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+<footer >Created By Shruti</footer>
+
+</html>
